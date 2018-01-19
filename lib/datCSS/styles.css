@@ -1,12 +1,21 @@
 body {
-  background: lightgrey;
+  background: #90caf9;
   font-family: sans-serif;
 }
 
-#fb-rendered-form {
-  clear: both;
-  display: none;
+.Qtitle {
+  color: #004d40;
 }
-#fb-rendered-form button {
-  float: right;
+
+.bob {
+  color: black;
+}
+
+
+.foot {
+  font-size: 16px;
+}
+
+.datTitle {
+  padding-top: 10px;
 }

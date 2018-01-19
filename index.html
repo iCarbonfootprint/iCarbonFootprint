@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
+
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="lib/datCSS/styles.css" type="text/css">
@@ -11,68 +12,282 @@
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-  <!-- Bootstrap -->
-  <!-- <link rel="stylesheet" href="lib/libraries/bootstrap/bootstrap.css">
-  <script src="lib/libraries/bootstrap/bootstrap.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/js/tether.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.3/css/tether.css"> -->
 
+  <!-- materialize -->
   <script src="lib/libraries/materialize.js"></script>
   <link rel="stylesheet" href="lib/libraries/materialize.css">
 
 
-  <!-- surveyjs -->
-  <script src="http://formbuilder.online/assets/js/form-builder.min.js"></script>
-  <script src="https://formbuilder.online/assets/js/form-render.min.js"></script>
+  <!-- charjs -->
+  <script src="lib/libraries/chart.js"></script>
 
-  </head>
-  <body>
-<div class="container">
-    <h1> BOB </h1>
+</head>
+
+<body>
+  <div class="card blue-grey darken-1">
+    <h1 class="datTitle center-align">Carbon footprint estimation</h1>
+    <br>
+    <div class="divider container"></div>
+    <div class="card-content white-text center-align foot container">
+
+      What does your footprint look like? Please note that these questions assume the average number of uses for each question, while I would have liked to go much more in depth and be as specific as possible, I am constrained by time. That's why this is a
+      rough estimate, and it isn't 100% accurate as it doesn't take everything into account, but it should give you an idea of your carbon footprint. Please enjoy!
+
+    </div>
+  </div>
+  <div class="container">
+    <br>
+    <h2 class="Qtitle"> Do you use AC in your home? </h2>
     <div class="divider"></div>
+    <form action="#">
+      <p>
+        <input name="group1" type="radio" id="test1" value="1" />
+        <label id="ACYes" class="bob" for="test1">Yes</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test2" />
+        <label id="ACNo" class="bob" for="test2">No</label>
+      </p>
+<br>
+<br>
+
+
+      <h2 class="Qtitle"> Do you always turn lights off when you're not using them? </h2>
+      <div class="divider"></div>
       <form action="#">
         <p>
-          <input name="group1" type="radio" id="test1" value="1"/>
-          <label for="test1">Red</label>
+          <input name="group1" type="radio" id="test1" value="1" />
+          <label id="Lightyes" class="bob" for="test1">Red</label>
         </p>
         <p>
           <input name="group1" type="radio" id="test2" />
-          <label for="test2">Yellow</label>
+          <label id="Lightno" class="bob" for="test2">Yellow</label>
+        </p>
+
+    <h2 class="Qtitle"> Do you leave the water running while you brush your teeth? </h2>
+    <div class="divider"></div>
+    <form action="#">
+      <p>
+        <input name="group1" type="radio" id="test1" value="1" />
+        <label id="teethyes"class="bob" for="test1">Red</label>
+      </p>
+      <p>
+        <input name="group1" type="radio" id="test2" />
+        <label id="teethno" class="bob" for="test2">Yellow</label>
+      </p>
+
+
+      <h2 class="Qtitle"> Do you take 10 minute or longer showers? </h2>
+      <div class="divider"></div>
+      <form action="#">
+        <p>
+          <input name="group1" type="radio" id="test1" value="1" />
+          <label id="showerno"  class="bob" for="test1">Red</label>
         </p>
         <p>
-          <input class="with-gap" name="group1" type="radio" id="test3"  />
-          <label for="test3">Green</label>
+          <input name="group1" type="radio" id="test2" />
+          <label id="showeryes" class="bob" for="test2">Yellow</label>
         </p>
-        <p>
-          <input name="group1" type="radio" id="test4" />
-          <label for="test4">Brown</label>
-        </p>
-        <input type="submit">
 
-      </form>
-
-</div>
-
-
-
-<script>
-
-$( "form" ).submit(function( event ){
-  var radioValue = $("input[name=group1]:checked").val()
-  if(radioValue == 1){
-    Materialize.toast('Testing!' + '     ' + radioValue, 4000)
-    console.log(radioValue)
-  }
-
-})
+        <h2 class="Qtitle"> Do you handwash or machine wash dishes? </h2>
+        <div class="divider"></div>
+        <form action="#">
+          <p>
+            <input name="group1" type="radio" id="test1" value="1" />
+            <label class="bob" for="test1">Red</label>
+          </p>
+          <p>
+            <input name="group1" type="radio" id="test2" />
+            <label class="bob" for="test2">Yellow</label>
+          </p>
 
 
+          <h2 class="Qtitle"> Do you own and use a laundry machine and dryer? </h2>
+          <div class="divider"></div>
+          <form action="#">
+            <p>
+              <input name="group1" type="radio" id="test1" value="1" />
+              <label class="bob" for="test1">Red</label>
+            </p>
+            <p>
+              <input name="group1" type="radio" id="test2" />
+              <label class="bob" for="test2">Yellow</label>
+            </p>
+
+            <h2 class="Qtitle"> Do you have a TV? </h2>
+            <div class="divider"></div>
+            <form action="#">
+              <p>
+                <input name="group1" type="radio" id="test1" value="1" />
+                <label class="bob" for="test1">Red</label>
+              </p>
+              <p>
+                <input name="group1" type="radio" id="test2" />
+                <label class="bob" for="test2">Yellow</label>
+              </p>
+
+
+              <h2 class="Qtitle"> What are your eating habits? </h2>
+              <div class="divider"></div>
+              <form action="#">
+                <p>
+                  <input name="group1" type="radio" id="test1" value="1" />
+                  <label class="bob" for="test1">Red</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="test2" />
+                  <label class="bob" for="test2">Yellow</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="test3" />
+                  <label class="bob" for="test3">Green</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="test4" />
+                  <label class="bob" for="test4">Brown</label>
+                </p>
+
+                <h2 class="Qtitle"> Do you use disposable water bottles? </h2>
+                <div class="divider"></div>
+                <form action="#">
+                  <p>
+                    <input name="group1" type="radio" id="test1" value="1" />
+                    <label class="bob" for="test1">Red</label>
+                  </p>
+                  <p>
+                    <input name="group1" type="radio" id="test2" />
+                    <label class="bob" for="test2">Yellow</label>
+                  </p>
+
+
+                  <h2 class="Qtitle"> Do you use disposable plastic bags when you go food shopping? </h2>
+                  <div class="divider"></div>
+                  <form action="#">
+                    <p>
+                      <input name="group1" type="radio" id="test1" value="1" />
+                      <label class="bob" for="test1">Red</label>
+                    </p>
+                    <p>
+                      <input name="group1" type="radio" id="test2" />
+                      <label class="bob" for="test2">Yellow</label>
+                    </p>
+
+
+                    <h2 class="Qtitle"> Do you recycle? </h2>
+                    <div class="divider"></div>
+                    <form action="#">
+                      <p>
+                        <input name="group1" type="radio" id="test1" value="1" />
+                        <label class="bob" for="test1">Red</label>
+                      </p>
+                      <p>
+                        <input name="group1" type="radio" id="test2" />
+                        <label class="bob" for="test2">Yellow</label>
+                      </p>
+
+
+                      <h2 class="Qtitle"> Do you use a car or ride public transportation? </h2>
+                      <div class="divider"></div>
+                      <form action="#">
+                        <p>
+                          <input name="group1" type="radio" id="test1" value="1" />
+                          <label class="bob" for="test1">Red</label>
+                        </p>
+                        <p>
+                          <input name="group1" type="radio" id="test2" />
+                          <label class="bob" for="test2">Yellow</label>
+                        </p>
+                        <p>
+                          <input name="group1" type="radio" id="test3" />
+                          <label class="bob" for="test3">Green</label>
+                        </p>
+                        <p>
+                          <input name="group1" type="radio" id="test4" />
+                          <label class="bob" for="test4">Brown</label>
+                        </p>
+
+                        <h2 class="Qtitle"> BOB </h2>
+                        <div class="divider"></div>
+                        <form action="#">
+                          <p>
+                            <input name="group1" type="radio" id="test1" value="1" />
+                            <label class="bob" for="test1">Red</label>
+                          </p>
+                          <p>
+                            <input name="group1" type="radio" id="test2" />
+                            <label class="bob" for="test2">Yellow</label>
+                          </p>
+                          <p>
+                            <input name="group1" type="radio" id="test3" />
+                            <label class="bob" for="test3" color="white">Green</label>
+                          </p>
+                          <p>
+                            <input name="group1" type="radio" id="test4" />
+                            <label class="bob" for="test4">Brown</label>
+                          </p>
 
 
 
 
 
-</script>
+
+
+
+
+
+                              <input type="submit">
+
+                            </form>
+
+  </div>
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  <script>
+    var ctx = $("#myChart");
+
+    $("form").submit(function(event) {
+      var radioValue = $("input[name=group1]:checked").val()
+      if (radioValue == 1) {
+        Materialize.toast('Testing!' + '     ' + radioValue, 4000)
+        console.log(radioValue)
+      }
+
+    })
+
+
+    $(".bob").click(function() {
+      Materialize.toast('Testing!', 4000)
+    })
+    var myDonutChart = new Chart(ctx, {
+      type: 'pie',
+      data: data,
+      options: {
+
+      }
+    })
+
+    data = {
+      datasets: [{
+        data: [10, 20, 30]
+      }],
+
+
+      labels: [
+        'red',
+        'yellow',
+        'blue'
+      ]
+    }
+
+
+    $(document).ready(function() {
+      $(document).on('submit', '#my-form', function() {
+        // do your things
+        return false;
+      });
+    });
+  </script>
 
 
 
@@ -83,7 +298,8 @@ $( "form" ).submit(function( event ){
 
 
 
+</body>
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
+    target="_blank">CC 3.0 BY</a></div>
 
-
-  </body>
 </html>
