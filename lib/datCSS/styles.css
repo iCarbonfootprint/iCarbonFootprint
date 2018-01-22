@@ -1,14 +1,14 @@
 body {
-  background: #90caf9;
+  background: #5CDB95;
   font-family: sans-serif;
 }
 
 .Qtitle {
-  color: #004d40;
+  color: #05386B;
 }
 
 .bob {
-  color: black;
+  color: #05386B;
 }
 
 
@@ -17,5 +17,29 @@ body {
 }
 
 .datTitle {
+  color: #EDF5E1;
   padding-top: 10px;
+}
+
+#boxtitle {
+  border-radius: 25px;
+  background-color: #379863;
+  color: #EDF5E1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+
+.listss {
+  background-color: #05386B !important;
+  color: #EDF5E1;
+  border-bottom: 0px !important;
+}
+
+
+#final {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  border-radius: 25px !important;
 }

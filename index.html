@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>title</title>
+  <title>Carbon footprint</title>
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="lib/datCSS/styles.css" type="text/css">
@@ -18,14 +18,14 @@
   <link rel="stylesheet" href="lib/libraries/materialize.css">
 
 
-  <!-- charjs -->
+  <!-- chartjs -->
   <script src="lib/libraries/chart.js"></script>
 
 </head>
 
 <body>
-  <div class="card blue-grey darken-1">
-    <h1 class="datTitle center-align">Carbon footprint estimation</h1>
+  <div class="card  z-depth-3" id="boxtitle">
+    <h1 class="datTitle center-align">Your carbon footprint</h1>
     <br>
     <div class="divider container"></div>
     <div class="card-content white-text center-align foot container">
@@ -35,7 +35,7 @@
 
     </div>
   </div>
-  <div class="container">
+  <div class="container" >
     <br>
     <h3 class="Qtitle"> Do you use AC in your home? </h3>
     <div class="divider"></div>
@@ -53,13 +53,15 @@
         <div class="col s6 offset-s6 ">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <span class="card-title">Air conditioning</span>
+              <p>There are around 117 million metric tons of co2 let out into the air every year
+              from AC's, that's 257,940,846,756 pounds. Three quarters of all homes in the U.S. use
+              air conditioning, so about every home with an AC releases 1064 pounds of co2 into the air
+              each year</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
+              <a href="https://energy.gov/energysaver/home-cooling-systems/air-conditioning">Source</a>
+
             </div>
           </div>
         </div>
@@ -68,7 +70,7 @@
 <br>
 
 
-      <h3 class="Qtitle"> Do you always turn lights off when you're not using them? </h3>
+      <!-- <h3 class="Qtitle"> Do you always turn lights off when you're not using them? </h3>
       <div class="divider"></div>
       <form action="#">
         <p>
@@ -83,19 +85,19 @@
           <div class="col s6 offset-s6 ">
             <div class="card blue-grey darken-1">
               <div class="card-content white-text">
-                <span class="card-title">Card Title</span>
+                <span class="card-title">Light Bulb!</span>
                 <p>I am a very simple card. I am good at containing small bits of information.
                 I am convenient because I require little markup to use effectively.</p>
               </div>
               <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+
+
               </div>
             </div>
           </div>
         </div>
         <br>
-        <br>
+        <br> -->
 
     <h3 class="Qtitle"> Do you leave the water running while you brush your teeth? </h3>
     <div class="divider"></div>
@@ -112,13 +114,14 @@
         <div class="col s6 offset-s6 ">
           <div class="card blue-grey darken-1">
             <div class="card-content white-text">
-              <span class="card-title">Card Title</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+              <span class="card-title">Water</span>
+              <p>A single gallon of water when it gets to your home, has emitted .009 pounds of co2 from
+              being processed and treated etc... That's only 4 grams, doesn't sound like much right?
+              But it adds up, if you brush your teeth once a day with the water its 16.2 pounds of co2 and 1800 gallons of water by the end
+              of the year, twice a day is 32.4</p>
             </div>
             <div class="card-action">
-              <a href="#">This is a link</a>
-              <a href="#">This is a link</a>
+              <a href="https://www.glencanyon.org/glen_canyon/water-conservation">Source</a>
             </div>
           </div>
         </div>
@@ -141,13 +144,15 @@
           <div class="col s6 offset-s6 ">
             <div class="card blue-grey darken-1">
               <div class="card-content white-text">
-                <span class="card-title">Card Title</span>
-                <p>I am a very simple card. I am good at containing small bits of information.
-                I am convenient because I require little markup to use effectively.</p>
+                <span class="card-title">Showers!</span>
+                <p>The average shower lasts 8.2 minutes and the average shower head uses 2.1 gallons per minute.
+                Not only that but 80% of men and 90% of women say they shower at least once a day. So it's safe to say that you probably
+                take a shower at least once a day. That would be 365 a year, at that rate it would come to 6,286 gallons, or 56.56 pounds of co2.
+                This could be different if you take longer showers or have a water saving showerhead or take them less often. But again this is just a rogh estimate</p>
               </div>
               <div class="card-action">
-                <a href="#">This is a link</a>
-                <a href="#">This is a link</a>
+                <a href="https://www.home-water-works.org/indoor-use/showers">Source</a>
+                <a href="http://www.smh.com.au/lifestyle/beauty/how-often-should-we-shower-much-less-often-than-you-think-20150310-140487.html">source</a>
               </div>
             </div>
           </div>
@@ -170,13 +175,13 @@
             <div class="col s6 offset-s6 ">
               <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
-                  <span class="card-title">Card Title</span>
-                  <p>I am a very simple card. I am good at containing small bits of information.
-                  I am convenient because I require little markup to use effectively.</p>
+                  <span class="card-title">Cleaning the dishes</span>
+                  <p>The average dishwasher uses only 6 gallons and on average handwashing uses 27 gallons! I know I was surprised!
+                  Dishwashers give off about 770 grams of co2 per use, but handwashing with extravagant use of hot water can give off up to 8000g of co2! So dishwashers are much more enviornmentally friendly! </p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
-                  <a href="#">This is a link</a>
+                  <a href="https://www.cnet.com/how-to/how-much-water-do-dishwashers-use/">Source</a>
+                  <a href="https://www.theguardian.com/environment/green-living-blog/2010/aug/19/carbon-footprints-dishwasher-washing-up">Source 2</a>
                 </div>
               </div>
             </div>
@@ -189,7 +194,7 @@
           <form action="#">
             <p>
               <input name="group6" type="radio" id="test11" value="1" />
-              <label id"laundryyes" class="bob" for="test11">Yes</label>
+              <label id="laundryyes" class="bob" for="test11">Yes</label>
             </p>
             <p>
               <input name="group6" type="radio" id="test12" />
@@ -199,13 +204,13 @@
               <div class="col s6 offset-s6 ">
                 <div class="card blue-grey darken-1">
                   <div class="card-content white-text">
-                    <span class="card-title">Card Title</span>
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                    I am convenient because I require little markup to use effectively.</p>
+                    <span class="card-title">Laundry Machine and Dryer</span>
+                    <p>The carbon footprint of a load of laundry can use from about 1.3 lbs of co2 to about 7.7 lbs per load. So if you did
+                    2 loads of laundry a week you could be using 104 lbs to 800 lbs a year.</p>
                   </div>
                   <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a href="https://www.theguardian.com/environment/green-living-blog/2010/aug/19/carbon-footprints-dishwasher-washing-up">Source</a>
+
                   </div>
                 </div>
               </div>
@@ -213,7 +218,7 @@
             <br>
             <br>
 
-            <h3 class="Qtitle"> Do you have a TV? </h3>
+            <!-- <h3 class="Qtitle"> Do you have a TV? </h3>
             <div class="divider"></div>
             <form action="#">
               <p>
@@ -233,14 +238,14 @@
                       I am convenient because I require little markup to use effectively.</p>
                     </div>
                     <div class="card-action">
-                      <a href="#">This is a link</a>
-                      <a href="#">This is a link</a>
+
+
                     </div>
                   </div>
                 </div>
               </div>
               <br>
-              <br>
+              <br> -->
 
               <h3 class="Qtitle"> What are your eating habits? </h3>
               <div class="divider"></div>
@@ -261,20 +266,19 @@
                   <div class="col s6 offset-s6 ">
                     <div class="card blue-grey darken-1">
                       <div class="card-content white-text">
-                        <span class="card-title">Card Title</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                        <span class="card-title">Eating habits!</span>
+                        <p>Vegans release only 6.4 lbs of co2 a day which is 2,336 lbs a year, vegetarians release 8.4 lbs which is 3,066 lbs, meat can use from 10.4 lbs to 15.8 lbs a day depending on how much meat you eat thats 3,796 to 5,621 lbs a year.  </p>
                       </div>
                       <div class="card-action">
-                        <a href="#">This is a link</a>
-                        <a href="#">This is a link</a>
+                        <a href="https://www.vox.com/2014/7/2/5865109/study-going-vegetarian-could-cut-your-food-carbon-footprint-in-half">Source</a>
+
                       </div>
                     </div>
                   </div>
                 </div>
                 <br>
                 <br>
-
+<!--
                 <h3 class="Qtitle"> Do you use disposable water bottles? </h3>
                 <div class="divider"></div>
                 <form action="#">
@@ -295,14 +299,14 @@
                           I am convenient because I require little markup to use effectively.</p>
                         </div>
                         <div class="card-action">
-                          <a href="#">This is a link</a>
-                          <a href="#">This is a link</a>
+
+
                         </div>
                       </div>
                     </div>
                   </div>
                   <br>
-                  <br>
+                  <br> -->
 
                   <h3 class="Qtitle"> Do you use disposable plastic bags when you go food shopping? </h3>
                   <div class="divider"></div>
@@ -319,13 +323,12 @@
                       <div class="col s6 offset-s6 ">
                         <div class="card blue-grey darken-1">
                           <div class="card-content white-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">The plastic bag</span>
+                            <p>Each plastic bag produces about 33g of co2, and on average a family uses about 1,500 a year which is about 110 lbs of co2 a year, while that might not be a lot they have other harmful side affects and you should try not to use them.</p>
                           </div>
                           <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
+                            <a href="http://stopplastics.ca/carbon-footprint-plastic-0">Source</a>
+
                           </div>
                         </div>
                       </div>
@@ -348,13 +351,12 @@
                         <div class="col s6 offset-s6 ">
                           <div class="card blue-grey darken-1">
                             <div class="card-content white-text">
-                              <span class="card-title">Card Title</span>
-                              <p>I am a very simple card. I am good at containing small bits of information.
-                              I am convenient because I require little markup to use effectively.</p>
+                              <span class="card-title">Recycling!</span>
+                              <p>It's simple and easy and has numerous benefits including shrinking your carbon foot print, so if you don't already get started!</p>
                             </div>
                             <div class="card-action">
-                              <a href="#">This is a link</a>
-                              <a href="#">This is a link</a>
+
+
                             </div>
                           </div>
                         </div>
@@ -373,17 +375,16 @@
                           <input name="group12" type="radio" id="test25" />
                           <label id="pubtrans"class="bob" for="test25">Public transportation</label>
                         </p>
-                        <div class="row scale-transition scale-out" id="card1">
+                        <div class="row scale-transition scale-out" id="card12">
                           <div class="col s6 offset-s6 ">
                             <div class="card blue-grey darken-1">
                               <div class="card-content white-text">
-                                <span class="card-title">Card Title</span>
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                                <span class="card-title">Cars vs Public transportation</span>
+                                <p>The average car produces 12,000 lbs of co2 every year, while each mta ride saves around 10 lbs of co2!</p>
                               </div>
                               <div class="card-action">
-                                <a href="#">This is a link</a>
-                                <a href="#">This is a link</a>
+                                <a href="http://web.mta.info/sustainability/pdf/2012Report.pdf">Source</a>
+                                <a href="https://www.cartalk.com/content/global-warming-and-your-car-0">Source</a>
                               </div>
                             </div>
                           </div>
@@ -401,12 +402,31 @@
 
 
 
-                              <input type="submit">
 
                             </form>
+      <ul class="collection">
+        <li class="collection-item listss">Things like ACs, laundry machines, dryers, and other home appliances are pretty necessary, an easy way to reduce your carbon foot print is by making sure you have energy star rated appliances which use much less energy. You should also unplug it when you're not using it because it might be "off" but it's still using energy</li>
+        <li class="collection-item listss">I'm pretty sure we all live in the city, so you should try to take public transportation more, it will save you money as it's not as expensive as gas, it's better for the enviornment, and sometimes it can save time by avoiding traffic which can really slow you down sometimes. You should also recycle, if you don't already that is.</li>
+        <li class="collection-item listss">Water consumption is yet another problem on its own, with only 2% of earths water being fresh and us rapidly using it, so when possible try to use water sparingly, before we all have to.</li>
+      </ul>
+
+
+
 
   </div>
+  <div class="card  z-depth-3" id="boxtitle">
+    <h3 class="datTitle center-align">The end!</h3>
+    <br>
+    <div class="divider container"></div>
+    <div class="card-content white-text center-align foot container">
 
+      <p>This is what I could do with the time I had, it's just a bit of simple information, that may or may not be surprising to you, and I hope you took somethign away from this. I encourage you to go do more research on your own, as it's our world and we should all do our part to take care of it, it's not as hard as you think, there are many simple things you can do to reduce your carbon footprint even more. I hope you enjoyed have a good day.</p>
+
+    </div>
+  </div>
+  <div class="container center-align">
+  <a class="btn  btn-large cyan pulse" onClick="window.location.href=window.location.href">Click to restart</a>
+  </div>
   <canvas id="myChart" width="400" height="400"></canvas>
 
   <script>
@@ -416,90 +436,130 @@
       event.preventDefault()
       var radioValue = $("input[name=group1]:checked").val()
       if (radioValue == 1) {
-        Materialize.toast('Testing!' + '     ' + radioValue, 4000)
+        Materialize.toast('Testing!' + '     ' + radioValue, 5000)
         console.log(radioValue)
       }
 
     })
     $("#ACYes").click(function() {
-      Materialize.toast('Testing!', 4000)
+      Materialize.toast('Three out of four homes in the U.S. have AC\'s', 5000)
       $("#card1").addClass('scale-in')
     })
     $("#ACNo").click(function() {
-      Materialize.toast('Testing!', 4000)
+      Materialize.toast('Only one out of four homes in the U.S. don\'t have AC\'s ', 5000)
       $("#card1").addClass('scale-in')
     })
 
 
-
-    $("#Lightyes").click(function() {
-      Materialize.toast('Testing!', 4000)
-      $("#card2").addClass('scale-in')
-    })
-    $("#Lightno").click(function() {
-      Materialize.toast('Testing!', 4000)
-      $("#card2").addClass('scale-in')
-    })
+    //
+    // $("#Lightyes").click(function() {
+    //
+    //   $("#card2").addClass('scale-in')
+    // })
+    // $("#Lightno").click(function() {
+    //
+    //   $("#card2").addClass('scale-in')
+    // })
 
     $("#teethyes").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card3").addClass('scale-in')
     })
     $("#teethno").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card3").addClass('scale-in')
     })
 
 
     $("#showeryes").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card4").addClass('scale-in')
     })
     $("#showerno").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card4").addClass('scale-in')
     })
 
 
     $("#machinewash").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card5").addClass('scale-in')
     })
     $("#handwash").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card5").addClass('scale-in')
     })
 
     $("#laundryyes").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card6").addClass('scale-in')
     })
     $("#laundryno").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card6").addClass('scale-in')
     })
 
     $("#tvyes").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card7").addClass('scale-in')
     })
     $("#tvno").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card7").addClass('scale-in')
     })
 
     $("#vegan").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card8").addClass('scale-in')
     })
     $("#vegetarian").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card8").addClass('scale-in')
     })
     $("#meat").click(function() {
-      Materialize.toast('Testing!', 4000)
+
       $("#card8").addClass('scale-in')
     })
+
+    $("#bottleyes").click(function() {
+
+      $("#card9").addClass('scale-in')
+    })
+    $("#bottleno").click(function() {
+
+      $("#card9").addClass('scale-in')
+    })
+
+    $("#bagyes").click(function() {
+
+      $("#card10").addClass('scale-in')
+    })
+    $("#bagno").click(function() {
+
+      $("#card10").addClass('scale-in')
+    })
+
+    $("#recycleyes").click(function() {
+
+      $("#card11").addClass('scale-in')
+    })
+    $("#recycleno").click(function() {
+
+      $("#card11").addClass('scale-in')
+    })
+
+    $("#car").click(function() {
+
+      $("#card12").addClass('scale-in')
+    })
+    $("#pubtrans").click(function() {
+
+      $("#card12").addClass('scale-in')
+    })
+
+
+
+
 
 
 
@@ -544,7 +604,6 @@
 
 
 </body>
-<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0"
-    target="_blank">CC 3.0 BY</a></div>
+
 
 </html>
